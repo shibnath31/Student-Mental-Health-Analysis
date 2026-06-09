@@ -112,13 +112,18 @@ Sleep duration
 Study satisfaction
 
 Step 12: Final Results
+<img width="1189" height="1489" alt="image" src="https://github.com/user-attachments/assets/57bdbe5f-a71e-48fc-a471-9d7582b5fedc" />
 
-The model achieved:
+
+
+# The model achieved:
 
 ROC-AUC ≈ 0.92
 
 Accuracy ≈ 85%
 It shows that machine learning can effectively detect depression risk among students.
+<img width="452" height="393" alt="image" src="https://github.com/user-attachments/assets/721645ff-8bf0-45d2-8192-d36b4885933d" />
+
 
 🌟 Final Outcome
 
@@ -126,3 +131,8 @@ This project proves that:
  Mental health prediction using ML is possible
 At-risk students can be identified early
 Colleges and universities can use such models for early interventions
+
+# Author 
+Shibnath Rana
+ML Intern|Student of MCA 
+Devloped as part of Machine Learning 
