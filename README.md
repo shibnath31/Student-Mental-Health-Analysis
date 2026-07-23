@@ -183,13 +183,7 @@ jupyter notebook
 ## Prediction Results
 <img width="599" height="184" alt="image" src="https://github.com/user-attachments/assets/57a053b8-dbdd-4972-b421-6915cb4b033f" />
 
-Example:
 
-```
-images/dashboard.png
-```
-
----
 
 ## 📚 Future Improvements
 
@@ -211,13 +205,13 @@ Contributions are welcome!
 2. Create a new branch
 
 ```bash
-git checkout -b feature/NewFeature
+git checkout -b feature/Depression
 ```
 
 3. Commit changes
 
 ```bash
-git commit -m "Add new feature"
+git commit -m "Depression"
 ```
 
 4. Push to GitHub
