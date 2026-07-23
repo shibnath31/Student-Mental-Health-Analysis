@@ -1,138 +1,247 @@
-# Student-Mental-Health-Analysis
+# 🧠 Student Mental Health Analysis
 
-ABSTRACT:-Student mental health has emerged as a serious global concern, largely driven by increasing academic pressure, competitive learning environments, and personal challenges faced by young adults. Early identification of mental health risks is important for preventing long-term psychological issues, yet traditional detection methods can be slow, subjective, or inaccessible. This study presents a data-driven approach to predict the likelihood of depression among students using machine learning techniques. A comprehensive dataset containing demographic, academic, lifestyle, and psychological indicators—such as gender, age, academic pressure, study satisfaction, sleep duration, financial stress, suicidal thoughts, and family history of mental illness—was analyzed to uncover patterns associated with depression.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?style=for-the-badge&logo=scikitlearn" />
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/shibnath31/Student-Mental-Health-Analysis?style=for-the-badge" />
+</p>
 
-Data preprocessing involved removing irrelevant variables, handling class imbalance, converting subjective responses into standardized formats, and transforming sleep duration into a numerical scale. Exploratory data analysis revealed strong associations between depression and factors such as high academic pressure, low study satisfaction, reduced sleep duration, and financial instability. Among all predictive attributes, suicidal thoughts and family history of mental illness were the most influential indicators of depression.
+## 📖 Overview
 
-A CatBoost machine learning classifier was selected for its superior handling of categorical variables and its efficiency without extensive preprocessing. The model demonstrated strong predictive performance, achieving an ROC-AUC of approximately 0.92, along with high accuracy and F1-score across stratified k-fold evaluations. The results show that machine learning can identify high-risk students with significant reliability, thus presenting an opportunity for educational institutions to take proactive mental-health initiatives.
+**Student Mental Health Analysis** is a data analysis and machine learning project that explores factors affecting students' mental well-being. Using real-world data, the project performs exploratory data analysis (EDA), visualization, preprocessing, and predictive modeling to identify patterns related to mental health.
 
-Overall, the study highlights the potential of artificial intelligence in detecting depression risk early, promoting timely interventions, and supporting student well-being. Future research can integrate real-time behavioral data and multi-institution datasets to improve generalizability and support the development of mental-health monitoring systems.
+The objective is to gain meaningful insights into student mental health and demonstrate practical data science and machine learning techniques.
 
-Keywords:- Student mental health, Depression prediction, Machine learning, CatBoost classifier, Academic pressure, Financial stress, Study satisfaction, Sleep duration, Suicidal thoughts, Data-driven analysis, Mental health monitoring, Early intervention, Predictive modeling, Educational well-being.
+---
 
-# Step-by-Step Explanation
+## 🎯 Objectives
 
+- Analyze student mental health data
+- Perform data cleaning and preprocessing
+- Visualize important trends and relationships
+- Identify factors influencing mental health
+- Build and evaluate machine learning models
+- Generate meaningful insights from the dataset
 
-# Step 1:Import Libraries
+---
 
-We import the required Python libraries such as pandas, numpy, seaborn, matplotlib, sklearn, and catboost.
-These help in data loading, visualization, preprocessing, and model training.
+## ✨ Features
 
-# Step 2: Load Dataset
+- 📊 Exploratory Data Analysis (EDA)
+- 🧹 Data Cleaning & Preprocessing
+- 📈 Interactive Data Visualizations
+- 🤖 Machine Learning Models
+- 📉 Model Performance Evaluation
+- 📋 Statistical Insights
+- 📁 Well-Organized Project Structure
 
-The CSV file of student mental health is loaded using:
+---
 
-df = pd.read_csv("studentdepression.csv")
+## 🛠️ Technologies Used
 
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
 
-This dataset contains details about students like academic pressure, study satisfaction, sleep duration, etc.
+---
 
-# Step 3: Check Data Quality
+## 📂 Project Structure
 
-We check:
-✔ Missing values
-✔ Data types
-✔ Basic statistics
-This helps us understand whether the data is clean or needs corrections.
+```
+Student-Mental-Health-Analysis/
+│
+├── dataset/
+│   └── student_mental_health.csv
+│
+├── notebooks/
+│   └── analysis.ipynb
+│
+├── images/
+│
+├── models/
+│
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
 
-# Step 4: Remove Irrelevant Columns
+---
 
-Some columns do not help in depression prediction (example: ID, Profession).
-So they are removed to avoid noise in the model.
+## 📊 Dataset
 
-# Step 5: Data Preprocessing
+The dataset contains information related to students, including factors such as:
 
-This includes:
+- Age
+- Gender
+- Academic Level
+- Course
+- CGPA
+- Stress Level
+- Anxiety
+- Depression
+- Panic Attacks
+- Treatment Status
 
-Converting sleep duration text (e.g., "5–6 hours") into a number
+> **Note:** Dataset used only for educational and research purposes.
 
-Replacing missing values
+---
 
-Encoding categorical features (like Gender, City, etc.)
+## 🔍 Exploratory Data Analysis
 
-After preprocessing, the dataset becomes ready for modeling.
+The project includes:
 
-# Step 6: Visualization and EDA
+- Missing value analysis
+- Data distribution
+- Correlation analysis
+- Gender-wise comparison
+- Stress level analysis
+- Depression analysis
+- Anxiety visualization
+- Feature relationships
+- Statistical summaries
 
-Graphs such as bar plots, count plots, and histograms help identify patterns.
-For example:
+---
 
-High academic pressure → higher risk of depression
+## 🤖 Machine Learning Workflow
 
-Short sleep duration → higher risk of depression
+1. Data Collection
+2. Data Cleaning
+3. Feature Engineering
+4. Train-Test Split
+5. Model Training
+6. Model Evaluation
+7. Prediction
 
-This step provides insights into the data.
+---
 
-# Step 7: Split Train and Test Data
+## 📈 Model Evaluation
 
-The dataset is divided into:
+Performance is evaluated using:
 
-80% training data
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+- Classification Report
 
-20% testing data
+---
 
-This helps test the model’s performance on unseen data.
+## 🚀 Installation
 
-# Step 8: Train CatBoost Model
+### Clone the repository
 
-We use CatBoostClassifier because it handles categorical data automatically.
-The model is trained to predict the value of Depression based on other features.
+```bash
+git clone https://github.com/shibnath31/Student-Mental-Health-Analysis.git
+```
 
-# Step 9: Make Predictions
+### Navigate to the project
 
-The model predicts the depression risk for testing data and compares it with the actual result.
+```bash
+cd Student-Mental-Health-Analysis
+```
 
-# Step 10: Evaluate Model
+### Install dependencies
 
-We calculate:
+```bash
+pip install -r requirements.txt
+```
 
-Accuracy
+### Run Jupyter Notebook
 
-F1 score
+```bash
+jupyter notebook
+```
 
-ROC-AUC score
+---
 
-Confusion matrix
+## 📷 Project Preview
 
-These metrics show how well the model can identify students with depression.
+Add screenshots of:
 
-# Step 11: Feature Importance
+- Dashboard
+- Visualizations
+- Confusion Matrix
+- Correlation Heatmap
+- Prediction Results
 
-CatBoost shows which features influence prediction the most.
-Top indicators include:
+Example:
 
-Suicidal thoughts
+```
+images/dashboard.png
+```
 
-Academic pressure
+---
 
-Financial stress
+## 📚 Future Improvements
 
-Sleep duration
+- Deep Learning Models
+- Interactive Dashboard (Streamlit)
+- Real-Time Prediction
+- Hyperparameter Optimization
+- Model Deployment
+- Explainable AI (SHAP/LIME)
 
-Study satisfaction
+---
 
-Step 12: Final Results
-<img width="1189" height="1489" alt="image" src="https://github.com/user-attachments/assets/57bdbe5f-a71e-48fc-a471-9d7582b5fedc" />
+## 🤝 Contributing
 
+Contributions are welcome!
 
+1. Fork the repository
 
-# The model achieved:
+2. Create a new branch
 
-ROC-AUC ≈ 0.92
+```bash
+git checkout -b feature/NewFeature
+```
 
-Accuracy ≈ 85%
-It shows that machine learning can effectively detect depression risk among students.
-<img width="452" height="393" alt="image" src="https://github.com/user-attachments/assets/721645ff-8bf0-45d2-8192-d36b4885933d" />
+3. Commit changes
 
+```bash
+git commit -m "Add new feature"
+```
 
-🌟 Final Outcome
+4. Push to GitHub
 
-This project proves that:
- Mental health prediction using ML is possible
-At-risk students can be identified early
-Colleges and universities can use such models for early interventions
+```bash
+git push origin feature/NewFeature
+```
 
-# Author 
-Shibnath Rana
-ML Intern|Student of MCA 
-Devloped as part of Machine Learning 
+5. Create a Pull Request
+
+---
+
+## 📬 Contact
+
+**Shibnath Rana**
+
+💻 GitHub: https://github.com/shibnath31
+
+🌐 Portfolio: https://github.com/shibnath31/myportfolio
+
+📧 Email: your-shibnathrana0@gmail.com
+
+---
+
+## ⭐ Show Your Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub!
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<p align="center">
+Made with ❤️ by <b>Shibnath Rana</b>
+</p>
