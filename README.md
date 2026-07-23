@@ -173,7 +173,9 @@ jupyter notebook
 ## Dashboard
   <img width="1189" height="1489" alt="image" src="https://github.com/user-attachments/assets/6e3ab376-5c61-4091-b56b-83a3014852c2" />
 
-- Visualizations
+## Visualizations
+<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/95420b0a-1a63-4032-ae62-70e68187376b" />
+
 - Confusion Matrix
 - Correlation Heatmap
 - Prediction Results
