@@ -134,6 +134,11 @@ Performance is evaluated using:
 ---
 
 ## 🚀 Installation
+### Install dependencies
+
+```bash
+pip install -catboost
+```
 
 ### Clone the repository
 
@@ -163,7 +168,7 @@ jupyter notebook
 
 ## 📷 Project Preview
 
-Add screenshots of:
+
 
 - Dashboard
 - Visualizations
