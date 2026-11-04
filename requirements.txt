@@ -1,0 +1,5 @@
+Streamlit
+Pandas
+Numpy
+CatBoost
+Scikit-learn
