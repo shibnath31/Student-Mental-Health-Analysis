@@ -2,4 +2,4 @@ Streamlit
 Pandas
 Numpy
 CatBoost
-Scikit-learn=1.6.1
+Scikit-learn==1.6.1
