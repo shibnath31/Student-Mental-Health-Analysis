@@ -1,5 +1,5 @@
-Streamlit
-Pandas
-Numpy
-CatBoost
-Scikit-learn==1.6.1
+streamlit
+pandas
+numpy
+catboost
+scikit-learn==1.6.1
