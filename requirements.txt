@@ -1,6 +1,8 @@
-streamlit                                   
-joblib                                                           
-numpy                                                      
+streamlit
 pandas
-catboost
+numpy
+seaborn
+matplotlib
 scikit-learn
+optuna
+catboost==1.2.10
