@@ -1,5 +1,7 @@
 streamlit
 pandas
 numpy
-catboost
+catboost==1.2.10
+optuna==5.0.0
+matpotlib
 scikit-learn==1.6.1
