@@ -3,4 +3,4 @@ joblib
 numpy                                                      
 pandas
 catboost
-sk-learn==1.6.1
+scikit-learn
