@@ -3,6 +3,6 @@ pandas
 numpy
 seaborn
 matplotlib
-scikit-learn
+scikit-learn==1.9.1
 optuna
 catboost==1.2.10
